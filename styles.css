@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero__section{
+    background: url(images/heroSectionBackground.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 60vh;
+
+}
+.navbar{
+    
+    height: 60px;
+    padding: 16px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar__menu_container{
+    display: flex;
+    gap:20px;
+}
+.navbar__menu_container .User__icon{
+    height: 30px;
+    width: 30px;
+    display:  none;
+    align-items: center;
+    justify-content: center;
+    border-radius:100%;
+    border: solid white 1px;
+    
+}
+.hero__section_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: calc(60vh - 60px);
+
+} 
+.hero__Section_logo{
+    width: 220px;
+    height: auto;
+}
+.hero__Section_title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.hero__section__input_container{
+    padding: 16px;
+    width: 60% ;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    
+}
+.input__container_location,
+.input__container_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.input__container_location{
+    width: 40%;
+    border-right: 2px solid gray;
+}
+.input__container_search{
+    width: 60%;
+}
+@media only screen  and (max-Width:600px){
+    .navbar__menu_container .User__icon{
+        display:  flex;
+        
+    }
+    .link{
+
+        display: none;
+    }
+    .navbar{
+        padding: 16px;
+    }
+    .hero__section{
+        min-height: 80vh;
+    }
+    .hero__section__input_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+
+    }
+    .input__container_location,
+    .input__container_search{
+        padding: 15px;
+        border-radius: 10px;
+        width: 95%;
+    }
+    .hero__section_container{
+        height: calc(80vh - 60px);
+    }
+    .hero__section_title{
+    font-size: 20px;
+    width: 95%;
+    }
+}
