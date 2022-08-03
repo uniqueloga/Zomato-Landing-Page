@@ -60,12 +60,12 @@
     font-weight: 400;
 }
 .hero__section__input_container{
-    padding: 16px;
+    padding: 14px;
     width: 60% ;
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     border-radius: 10px;
     gap: 10px;
     
@@ -77,11 +77,21 @@
     outline: none;
 }
 .input__container_location{
-    width: 40%;
+    width: 50%;
     border-right: 2px solid gray;
 }
 .input__container_search{
-    width: 60%;
+    width: 55%;
+}
+.hero__section_locicon{ 
+    display: flex;
+    width: 30% ;
+    background-color: white;
+    align-items: center;
+    justify-content:left;
+    border-radius: 10px;
+    color: rgb(255, 0, 106);
+
 }
 @media only screen  and (max-Width:600px){
     .navbar__menu_container .User__icon{
@@ -103,6 +113,15 @@
         background-color: transparent;
         width: 100%;
 
+    }
+    .hero__section_locicon{ 
+        /* display: flex;  */
+        width: 50%;
+        color: rgb(255, 0, 106);
+        background-color: white;
+        border: none;
+        outline: none;
+        
     }
     .input__container_location,
     .input__container_search{
