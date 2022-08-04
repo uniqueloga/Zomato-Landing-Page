@@ -115,19 +115,24 @@
 
     }
     .hero__section_locicon{ 
-        /* display: flex;  */
-        width: 50%;
+        margin: 10px;
+        width: 90%;
         color: rgb(255, 0, 106);
         background-color: white;
-        border: none;
-        outline: none;
         
+        
+    }
+    .hero__section_locicon i{
+        margin: 10px;
+
     }
     .input__container_location,
     .input__container_search{
         padding: 15px;
         border-radius: 10px;
         width: 95%;
+        border: none;
+        
     }
     .hero__section_container{
         height: calc(80vh - 60px);
@@ -137,3 +142,123 @@
     width: 95%;
     }
 }
+
+.container{
+    margin: 3rem auto;
+    width: 90%;
+
+}
+.we__offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.we__offer_card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid gainsboro 1px;
+    transition: all 0.3s ease;
+}
+.we__offer_card:hover{
+    transform: scale(1.1);
+
+}
+
+.we__offer_card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+.we__offer_content {
+     padding: 10px;
+}
+.we__offer_content h2{
+    font-size: 20px;
+    font-weight: 400;
+     
+}
+.we__offer_content p {
+    font-size: 13px;
+    
+}
+.collections h1{
+    font-weight: 600;
+}
+.sub_heading_continer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    gap: 1rem;
+}
+.sub_heading_continer span:nth-child(2){
+    color: rgb(255, 0, 111);
+    font-size: 18px;
+    cursor: pointer;
+}
+.collections__card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.collections__card-container .card{
+    height: 350px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px ;
+    position: relative; 
+} 
+.card1{
+    background-image:url('images/collection1.jpg');
+
+}
+.card2{
+    background-image:url('images/collection2.jpg');
+    
+}
+.card3{
+    background-image:url('images/collection3.jpg');
+    
+}
+.card4{
+    background-image:url('images/collection4.jpg');
+    
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 10px;
+    background: linear-gradient(0deg,
+    rgba(0,0,0,1.0) 0%,
+    rgba(0,0,0,0.6) 50%,
+    rgba(0,0,0,0.2) 80%
+    );
+
+}
+.collections__card-container .card .contents{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 0.9rem;
+    padding: 12px 16px;
+    z-index: 6;
+}
+
+.content h3{
+    font-weight: 400;
+    letter-spacing: 0.5px; 
+}
+ 
