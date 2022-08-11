@@ -2,4 +2,4 @@
 
 This is the Zomato landing page clone.
 
-This is the Setup branch.
+The Creation of Zomato Landing page is completed
